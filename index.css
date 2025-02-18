@@ -1,0 +1,382 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(19, 118, 184);
+    font-size: small;
+}
+
+/* fullscreen */
+@media(min-width:600px) {
+    #halfscreen {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-halfscreen {
+        padding: 10px;
+    }
+
+    #halfscreen a {
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-halfscreen a {
+        text-decoration: none;
+        margin: 0px 15px;
+    }
+
+    .shortcut-btn {
+        display: none;
+    }
+
+    .nav-btn button {
+        margin: 0px 15px;
+        border-style: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        font-weight: 500;
+    }
+
+    #halfscreen a:hover {
+        color: rgb(0, 153, 255);
+    }
+
+    .nav-btn {
+        position: absolute;
+        right: 20px;
+    }
+
+}
+
+/* offscreen */
+@media(max-width:600px) {
+    #halfscreen {
+        display: flex;
+    }
+
+    #halfscreen a {
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #halfscreen a:hover {
+        color: rgb(0, 153, 255);
+    }
+
+    .nav-item button {
+        border-style: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+    }
+
+    .nav-halfscreen {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .nav-halfscreen a {
+        text-decoration: none;
+    }
+
+    .nav-halfscreen a {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav-halfscreen a:not(:last-child) {
+
+        border-bottom: 1px solid black;
+    }
+
+    .nav-btn {
+        display: flex;
+        margin: 15px;
+    }
+
+    .nav-btn button {
+        margin: 0px 15px;
+        border-style: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+    }
+
+    .shortcut-btn {
+        margin-right: 30px;
+    }
+
+    .shortcut-btn button {
+        border: none;
+        background: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        top: 15px;
+        /* right: 10px; */
+        cursor: pointer;
+
+    }
+
+    .shortcut-btn button span {
+        display: block;
+        width: 20px;
+        border-top: 1px solid white;
+    }
+
+    .shortcut-btn button span:not(:last-child) {
+        margin-bottom: 4px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+}
+
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    color: #00819e;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+}
+
+
+/* home*/
+h1 {
+    color: #444444;
+}
+
+#home-img img {
+    border-radius: 10px;
+}
+
+/* Cart-name*/
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #00819e;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444;
+}
+
+/* cart-product */
+.section-products h6 {
+    color: #00819e;
+}
+
+.card-title {
+    font-size: large;
+    padding: 10px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.checked {
+    color: orange;
+}
+
+.suggestion {
+    display: flex;
+    margin-right: 5px;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+
+}
+
+.cart-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+/* Products */
+
+#card {
+    margin-bottom: 50px;
+
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    width: 950px;
+}
+
+#products {
+    display: flex;
+    justify-content: center;
+}
+
+/* Customer */
+
+#customer h6 {
+    color: #00819e;
+}
+
+/* About */
+#about h6 {
+    color: #00819e;
+}
+
+#about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-content p {
+    width: 95%;
+}
+
+.about-content-p {
+    margin-left: 60px;
+}
+
+.about-content-img img {
+    border-radius: 15px;
+}
+
+/* FAQs */
+#faqs h6 {
+    color: #00819e;
+}
+
+/* Footer */
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    padding-top: 10px;
+}
+
+/* Loginform */
+
+.login-form form {
+    border: 1px solid black;
+    border-style: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 80px;
+    margin: 50px;
+}
+
+.login-gmail {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-style: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500px;
+    margin: 30px 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:600px){
+    .login-gmail h5{
+        display: none;
+    }
+}
