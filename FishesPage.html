@@ -148,8 +148,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -183,8 +183,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -218,8 +218,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -253,8 +253,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -288,8 +288,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -323,8 +323,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -358,8 +358,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()"  class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()"  class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -393,8 +393,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -428,8 +428,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="btn-group">
-                                        <button type="button" onclick="openPopup()" class="btn btn-sm btn-outline-primary">Buy Now</button>
-                                        <button type="button" class="btn btn-sm btn-outline-primary">Add Cart</button>
+                                        <button type="button" onclick="openPopup_buy()" class="btn btn-sm btn-outline-primary">Buy Now</button>
+                                        <button type="button" onclick="openPopup_cart()" class="btn btn-sm btn-outline-primary">Add Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -443,14 +443,21 @@
     <!-- Popup Message -->
 
     <div class="mypopup">
-        <div class="popup" id="popup">
+        <div class="popup" id="popup-buy">
             <img src="./Fishpro imgs/Tick.png">
             <h2>Thank You!</h2>
             <p>Your Order Placed Successfully!</p>
-            <button type="button" onclick="closePopup()" class="btn btn-md btn-primary">Done</button>
+            <button type="button" onclick="closePopup_buy()" class="btn btn-md btn-primary">Done</button>
         </div>
     </div>
-
+    <div class="mypopup">
+        <div class="popup" id="popup-cart">
+            <img src="./Fishpro imgs/Tick.png">
+            <h2>SuccessFull!</h2>
+            <p>Your Favourite has been Added to the Cart!</p>
+            <button type="button" onclick="closePopup_cart()" class="btn btn-md btn-primary">Done</button>
+        </div>
+    </div>
 
 
 
