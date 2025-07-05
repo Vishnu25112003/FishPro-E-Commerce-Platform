@@ -52,7 +52,7 @@ FishPro-E-Commerce-Platform/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Vishnu25112003/fishpro-ecommerce.git
+   git clone https://github.com/Vishnu25112003/FishPro-E-Commerce-Platform.git
 Open index.html in your browser:
 
 cd fishpro-ecommerce
